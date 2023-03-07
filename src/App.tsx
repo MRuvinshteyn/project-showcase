@@ -10,8 +10,18 @@ function App() {
         <p>
           Welcome to my Project Showcase!
         </p>
+        <ul>
+          <li>
+            <a href='https://github.com/MRuvinshteyn/bounce-2d'
+              className='App-link'
+              rel='noreferrer'
+              target='_blank'>
+              Bounce2D - a game to test your geometric prowess
+            </a>
+          </li>
+        </ul>
       </header>
-    </div>
+    </div >
   );
 }
 
