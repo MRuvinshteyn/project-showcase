@@ -1,19 +1,26 @@
 import { FC } from "react";
 import "./App.css";
 import { Layout } from "antd";
-import { Content, Header } from "antd/es/layout/layout";
+import { Content, Footer, Header } from "antd/es/layout/layout";
 import ProjectCollapse from "./components/ProjectCollapse";
+import logo from "./logo.svg";
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <Layout>
-        <Header className="App-header">Welcome to my Project Showcase!</Header>
-        <Content style={{ textAlign: "center", margin: "50px" }}>
+    <Layout>
+      <Header className="App-header">
+        <p>Welcome to my Project Showcase!</p>
+      </Header>
+      <Layout className="App-inner-layout">
+        <Content className="App-content">
           <ProjectCollapse />
         </Content>
       </Layout>
-    </div>
+      <Footer className="App-footer">
+        Made with React
+        <img src={logo} className="App-logo" alt="logo" />
+      </Footer>
+    </Layout>
   );
 };
 
