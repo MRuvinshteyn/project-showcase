@@ -1,28 +1,20 @@
-import React from "react";
-import logo from "./logo.svg";
+import { FC } from "react";
 import "./App.css";
+import { Layout } from "antd";
+import { Content, Header } from "antd/es/layout/layout";
+import ProjectCollapse from "./components/ProjectCollapse";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Welcome to my Project Showcase!</p>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/MRuvinshteyn/bounce-2d"
-              className="App-link"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Bounce2D - a game to test your geometric prowess
-            </a>
-          </li>
-        </ul>
-      </header>
+      <Layout>
+        <Header className="App-header">Welcome to my Project Showcase!</Header>
+        <Content style={{ textAlign: "center", margin: "50px" }}>
+          <ProjectCollapse />
+        </Content>
+      </Layout>
     </div>
   );
-}
+};
 
 export default App;
