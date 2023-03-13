@@ -16,7 +16,7 @@
 }
 
 .App-inner-layout {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   padding: 40px;
   min-height: 100%;
 }
@@ -33,7 +33,7 @@
 }
 
 .App-content {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   text-align: center;
   padding: 50px;
   overflow: auto;
